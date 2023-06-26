@@ -143,3 +143,89 @@ a 9.223.372.036.854.775.807. É usado para representar números inteiros
 maiores que o tipo int.
 long numeroLongo = 1234567890L; // declara uma variável do tipo long e atribui o valor de 1234567890 a ela
 ```
+
+## operadores aritméticos:
+
+- Adição (+): usado para somar dois valores
+- Subtração (-): usado para subtrair um valor de outro
+- Multiplicação (*): usado para multiplicar dois valores
+- Divisão (/): usado para dividir um valor por outro
+- Módulo (%): usado para obter o resto da divisão entre dois valores
+
+## operadores comparação
+
+- Igualdade (==): retorna verdadeiro se os valores comparados forem iguais
+- Desigualdade (!=): retorna verdadeiro se os valores comparados forem diferentes
+- Maior que (>): retorna verdadeiro se o valor da esquerda for maior que o valor da direita
+- Maior ou igual que (>=): retorna verdadeiro se o valor da esquerda for maior ou igual ao valor da direita
+- Menor que (<): retorna verdadeiro se o valor da esquerda for menor que o valor da direita
+- Menor ou igual que (<=): retorna verdadeiro se o valor da esquerda for menor ou igual ao valor da direita
+
+## operadores atribuição
+
+| Operador | Descrição |
+| --- | --- |
+| = | Atribui o valor da direita à variável da esquerda. |
+| += | Atribui a soma da variável da esquerda e o valor da direita à variável da esquerda. |
+| -= | Atribui a diferença da variável da esquerda e o valor da direita à variável da esquerda. |
+| *= | Atribui o produto da variável da esquerda e o valor da direita à variável da esquerda. |
+| /= | Atribui o quociente da variável da esquerda e o valor da direita à variável da esquerda. |
+| %= | Atribui o resto da divisão da variável da esquerda e o valor da direita à variável da esquerda. |
+| <<= | Desloca a variável da esquerda para a esquerda pelo número de posições especificado na variável da direita e atribui o resultado à variável da esquerda. |
+| >>= | Desloca a variável da esquerda para a direita pelo número de posições especificado na variável da direita e atribui o resultado à variável da esquerda. |
+| &= | Atribui o resultado da operação AND (E lógico) entre a variável da esquerda e o valor da direita à variável da esquerda. |
+| ^= | Atribui o resultado da operação XOR (OU exclusivo) entre a variável da esquerda e o valor da direita à variável da esquerda. |
+| |= | Atribui o resultado da operação OR (OU lógico) entre a variável da esquerda e o valor da direita à variável da esquerda. |
+
+## operadores lógico
+
+1. && (E lógico): Retorna verdadeiro se ambas as expressões forem verdadeiras.
+2. || (OU lógico): Retorna verdadeiro se pelo menos uma das expressões for verdadeira.
+3. ! (Negação lógica): Retorna verdadeiro se a expressão for falsa.
+
+## Tipos de conversões 
+
+## conversão implícita
+
+ Em C# é uma forma automática de converter um tipo de dados em outro tipo compatível sem a necessidade de realizar uma conversão explícita. Isso pode ajudar a simplificar o código e melhorar a legibilidade, mas é importante estar ciente dos possíveis problemas de perda de dados.
+
+```jsx
+int meuInt = 10;
+long meuLong = meuInt; // conversão implícita de int para long
+```
+
+## conversão  explícitas
+
+C# é uma forma manual de converter um tipo de dados em outro tipo compatível, quando a conversão implícita não é possível. Isso é feito usando o operador de conversão explícita "(tipo de dados de destino)valor" para realizar a conversão. É importante estar ciente dos possíveis problemas de perda de dados e precisão ao realizar conversões explícitas.
+
+```csharp
+double meuDouble = 123.45;
+int meuInt = (int) meuDouble; // conversão explícita de double para int
+```
+
+## método Parse()
+
+Em C# é um método que permite converter uma string em um valor numérico, como int, double, float, long, entre outros. Esse método é especialmente útil quando você precisa extrair valores de entrada do usuário em forma de string e convertê-los para tipos numéricos para manipulação dentro do programa.
+
+```csharp
+
+tipoDeDado valorConvertido = tipoDeDado.Parse(string valorOriginal);
+```
+
+## O método TryParse()
+
+é um método em C# que permite converter uma string em um valor numérico, sem lançar uma exceção em caso de falha na conversão. Em vez disso, ele retorna um valor booleano indicando se a conversão foi bem-sucedida ou não, e armazena o valor convertido em uma variável de saída se a conversão for bem-sucedida.
+
+```jsx
+string minhaString = "123";
+int meuInteiro;
+bool sucesso = int.TryParse(minhaString, out meuInteiro);
+```
+
+## O método Convert()
+
+é uma função de conversão de dados em C#. Ela é usada para converter um tipo de dados em outro tipo de dados. O método é capaz de converter tipos de dados primitivos, tipos de dados personalizados e tipos de dados enumerados. É menos flexível do que o método Parse() ou TryParse(), pois não pode lidar com exceções ou retornar valores nulos.
+
+```csharp
+Convert.ToTipoDeDado(valorOriginal);
+```
