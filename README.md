@@ -6,7 +6,7 @@
 <h2>Plano de Estudos</h2>
 <ul>
 <li>Introdução ao C# e ambiente de desenvolvimento</li>
-<li>Sintaxe básica de C# (variáveis, tipos de dados, operadores)</li>
+<li>Sintaxe básica de C# (variáveis, tipos de dados, operadores, tipos de conversões)</li>
 <li>Aprender sobre o desenvolvimento de aplicações web usando ASP.NET</li>
 <li>Entrada e saída de dados</li>
 <li>Condicionais (if/else)</li>
